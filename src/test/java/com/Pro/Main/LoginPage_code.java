@@ -58,14 +58,14 @@ public class LoginPage_code extends Baseclass {
     public void Order() {
     	lg.getAmz_Television().click();
 		Implicitwait(120);
-		lg.getAmz_Featured().click();
-		Implicitwait(120);
-		lg.getTv_mi().click();
-		Implicitwait(120);
-		lg.getTv_select_32().click();
-		Implicitwait(120);
-		lg.getMi_addchat().click();
-		Implicitwait(120);
+//		lg.getAmz_Featured().click();
+//		Implicitwait(120);
+//		lg.getTv_mi().click();
+//		Implicitwait(120);
+//		lg.getTv_select_32().click();
+//		Implicitwait(120);
+//		lg.getMi_addchat().click();
+//		Implicitwait(120);
 		browser_close();
 //      geturl("https://www.flipkart.com/");
 //      Implicitwait(120);
