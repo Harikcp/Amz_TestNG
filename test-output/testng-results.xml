@@ -2,32 +2,28 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="68481" started-at="2020-08-25T05:51:55Z" finished-at="2020-08-25T05:53:03Z">
+  <suite name="Default suite" duration-ms="136212" started-at="2020-08-26T15:50:09Z" finished-at="2020-08-26T15:52:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="68481" started-at="2020-08-25T05:51:55Z" finished-at="2020-08-25T05:53:03Z">
+    <test name="Default test" duration-ms="136212" started-at="2020-08-26T15:50:09Z" finished-at="2020-08-26T15:52:25Z">
       <class name="com.Pro.Main.LoginPage_code">
-        <test-method status="PASS" signature="Details()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="Details" is-config="true" duration-ms="8" started-at="2020-08-25T11:21:55Z" finished-at="2020-08-25T11:21:55Z">
+        <test-method status="PASS" signature="Details()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="Details" is-config="true" duration-ms="12" started-at="2020-08-26T21:20:09Z" finished-at="2020-08-26T21:20:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Details -->
-        <test-method status="PASS" signature="App_Browser()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="App_Browser" is-config="true" duration-ms="7003" started-at="2020-08-25T11:21:55Z" finished-at="2020-08-25T11:22:02Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="Login" duration-ms="36968" started-at="2020-08-26T21:20:09Z" finished-at="2020-08-26T21:20:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="App_Browser()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="App_Browser" is-config="true" duration-ms="0" started-at="2020-08-26T21:20:09Z" finished-at="2020-08-26T21:20:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- App_Browser -->
-        <test-method status="PASS" signature="Order()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="Order" duration-ms="4263" started-at="2020-08-25T11:22:02Z" finished-at="2020-08-25T11:22:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Order -->
-        <test-method status="PASS" signature="browser_close()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="browser_close" is-config="true" duration-ms="375" started-at="2020-08-25T11:22:06Z" finished-at="2020-08-25T11:22:06Z">
+        <test-method status="PASS" signature="browser_close()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="browser_close" is-config="true" duration-ms="1" started-at="2020-08-26T21:20:46Z" finished-at="2020-08-26T21:20:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_close -->
-        <test-method status="PASS" signature="App_Browser()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="App_Browser" is-config="true" duration-ms="5697" started-at="2020-08-25T11:22:06Z" finished-at="2020-08-25T11:22:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- App_Browser -->
-        <test-method status="FAIL" signature="Login()[pri:1, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="Login" duration-ms="46920" started-at="2020-08-25T11:22:12Z" finished-at="2020-08-25T11:22:59Z">
+        <test-method status="FAIL" signature="Order()[pri:1, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="Order" duration-ms="99193" started-at="2020-08-26T21:20:46Z" finished-at="2020-08-26T21:22:25Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -37,7 +33,7 @@
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.Pro.Main.LoginPage_code.Login(LoginPage_code.java:61)
+	at com.Pro.Main.LoginPage_code.Order(LoginPage_code.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -68,73 +64,16 @@
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="FAIL" signature="browser_close()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="browser_close" is-config="true" duration-ms="4142" started-at="2020-08-25T11:22:59Z" finished-at="2020-08-25T11:23:03Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=84.0.4147.135)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'LAPTOP-EGVBUQ43', ip: '192.168.225.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56922}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: eb944be7415216b650b4b84e0d9fadd9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=84.0.4147.135)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
-System info: host: 'LAPTOP-EGVBUQ43', ip: '192.168.225.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56922}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: eb944be7415216b650b4b84e0d9fadd9
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
-	at com.Pro.Main.LoginPage_code.browser_close(LoginPage_code.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:723)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- Order -->
+        <test-method status="PASS" signature="App_Browser()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="App_Browser" is-config="true" duration-ms="0" started-at="2020-08-26T21:20:46Z" finished-at="2020-08-26T21:20:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- App_Browser -->
+        <test-method status="PASS" signature="browser_close()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="browser_close" is-config="true" duration-ms="1" started-at="2020-08-26T21:22:25Z" finished-at="2020-08-26T21:22:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_close -->
-        <test-method status="SKIP" signature="browser_exit()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="browser_exit" is-config="true" duration-ms="0" started-at="2020-08-25T11:23:03Z" finished-at="2020-08-25T11:23:03Z">
+        <test-method status="PASS" signature="browser_exit()[pri:0, instance:com.Pro.Main.LoginPage_code@8bd1b6a]" name="browser_exit" is-config="true" duration-ms="0" started-at="2020-08-26T21:22:25Z" finished-at="2020-08-26T21:22:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_exit -->

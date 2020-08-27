@@ -7,7 +7,7 @@
         <methods>
           <include name="browser_close"/>
           <include name="browser_exit"/>
-          <include name="Login"/>
+          <include name="Order"/>
           <include name="App_Browser"/>
           <include name="Details"/>
         </methods>

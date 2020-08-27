@@ -27,11 +27,12 @@ public class LoginPage_code extends Baseclass {
 	
 	@BeforeMethod
 	public void App_Browser(){
-		 driver = browsers("Chrome");		
+		System.out.println("Before Method");	
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 0)
 	public void Login() {
+		 driver = browsers("Chrome");	
 		geturl("https://www.amazon.in/");
 		lg = new LoginPage(driver);
 		Mouseover(lg.getSignin_option());
@@ -50,7 +51,12 @@ public class LoginPage_code extends Baseclass {
 		Implicitwait(120);
 		lg.getAmaz_Menu().click();
 		Implicitwait(120);
-		lg.getAmz_Television().click();
+		
+	}
+
+    @Test(priority = 1)
+    public void Order() {
+    	lg.getAmz_Television().click();
 		Implicitwait(120);
 		lg.getAmz_Featured().click();
 		Implicitwait(120);
@@ -61,13 +67,9 @@ public class LoginPage_code extends Baseclass {
 		lg.getMi_addchat().click();
 		Implicitwait(120);
 		browser_close();
-	}
-
-    @Test(priority = 0)
-    public void Order() {
-      geturl("https://www.flipkart.com/");
-      Implicitwait(120);
-      browser_exit();
+//      geturl("https://www.flipkart.com/");
+//      Implicitwait(120);
+//      browser_exit();
  }
 	@AfterMethod
 	public static void browser_close() {

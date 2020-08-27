@@ -28,6 +28,8 @@ public  class Baseclass {
 			driver= new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+			Implicitwait(50);
+			driver.manage().deleteAllCookies();
 			
 		}else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "C:\\Eclipse\\SeleniumPractice\\Driver\\geckodriver.exe");
